@@ -13,4 +13,4 @@ pd sh ubuntu -- sh -c 'useradd -m -s /bin/bash euphoriys && echo "euphoriys:euph
 pd sh ubuntu -- sh -c 'usermod -aG sudo euphoriys && echo "euphoriys ALL=(ALL:ALL) NOPASSWD:ALL" > /etc/sudoers.d/euphoriys'
 pd sh ubuntu -- sh -c "sudo apt install xfce4 -y"
 wget https://raw.githubusercontent.com/euphoriys/ubuntu/main/ubuntu && mv ubuntu ../usr/bin/ubuntu && chmod +x ../usr/bin/ubuntu
-pd sh ubuntu -- sh -c "bash <(curl -s https://raw.githubusercontent.com/euphoriys/ubuntu/main/firefox.sh)"
+pd sh ubuntu -- sh -c 'su - euphoriys -c "bash <(curl -s https://raw.githubusercontent.com/euphoriys/ubuntu/main/firefox.sh)"'
