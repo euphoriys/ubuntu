@@ -10,5 +10,5 @@ Package: firefox
 Pin: version 1:1snap*
 Pin-Priority: -1
 ' | sudo tee /etc/apt/preferences.d/mozilla-firefox
-sudo apt install firefox
+sudo apt install firefox -y
 echo 'Unattended-Upgrade::Allowed-Origins:: "LP-PPA-mozillateam:${distro_codename}";' | sudo tee /etc/apt/apt.conf.d/51unattended-upgrades-firefox
