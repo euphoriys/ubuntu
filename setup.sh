@@ -1,11 +1,6 @@
 #!/bin/bash
 yes | pkg up
-pkg install proot-distro -y
-pkg install x11-repo -y
-pkg install virglrenderer-android -y
-pkg install wget -y
-pkg install termux-x11-nightly -y
-pkg install pulseaudio -y 
+pkg install proot-distro x11-repo termux-x11-nightly virglrenderer-android pulseaudio tmux wget -y
 pd install ubuntu && pd sh ubuntu -- sh -c "yes | apt update && yes | apt upgrade"
 pd sh ubuntu -- sh -c "apt install sudo nano -y"
 pd sh ubuntu -- sh -c 'useradd -m -s /bin/bash euphoriys && echo "euphoriys:euphoriys" | chpasswd'
