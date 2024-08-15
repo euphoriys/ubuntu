@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt install software-properties-common -y
-sudo add-apt-repository ppa:mozillateam/ppa -y
+sudo add-apt-repository ppa:mozillateam/ppa
 echo '
 Package: *
 Pin: release o=LP-PPA-mozillateam
