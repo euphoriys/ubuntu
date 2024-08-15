@@ -1,3 +1,4 @@
+#!/bin/bash
 yes | pkg up
 pkg install proot-distro -y
 pkg install x11-repo -y
