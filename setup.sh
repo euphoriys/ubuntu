@@ -5,7 +5,6 @@ pkg install x11-repo -y
 pkg install termux-x11-nightly -y
 pkg install virglrenderer-android -y
 pkg install pulseaudio -y
-pkg install tmux -y
 pkg install wget -y
 pd install ubuntu
 pd sh ubuntu -- sh -c "yes | apt update && yes | apt upgrade"
